@@ -1,6 +1,4 @@
-Features
-========
+Samples
+=======
 
-Maintain your Gherkin feature files (and any associative meta) here.
-
-For help, see the [Gwen documentation](https://gweninterpreter.org/docs).
+This folder containes examples bundled with Gwen. Delete the folder if you don't need or want them.
