@@ -222,9 +222,9 @@ jobs:
                 
       - name: 'Run :: Docker Compose'
         run: |2-
-              docker-compose -f ${{env.DOCKER_COMPOSE_FILE_PATH}} build && 
-              mkdir -p gwen/output &&
-              docker-compose -f ${{env.DOCKER_COMPOSE_FILE_PATH}} up -d &&
+              mkdir -p gwen/output
+              docker-compose -f ${{env.DOCKER_COMPOSE_FILE_PATH}} build
+              docker-compose -f ${{env.DOCKER_COMPOSE_FILE_PATH}} up -d
               ${{env.ADDITIONAL_COMPOSE_COMMANDS}}
               docker-compose -f ${{env.DOCKER_COMPOSE_FILE_PATH}} down -v
               
