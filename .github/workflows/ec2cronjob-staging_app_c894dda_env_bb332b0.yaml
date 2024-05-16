@@ -1,6 +1,7 @@
 name: ec2cronjob-staging_app_c894dda_env_bb332b0 Pipeline (Skyu Generated)
 'on':
-  schedule: {}
+  schedule: 
+    - cron:  '0 0 * * *'
   workflow_dispatch: {}
   repository_dispatch:
     types: pipeline_1e3019f0-3f5c-470a-85a2-d6706d8b620e
