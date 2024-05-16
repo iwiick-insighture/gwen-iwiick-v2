@@ -1,6 +1,7 @@
 name: ec2cronjob-prod_app_c894dda_env_b457b07 Pipeline (Skyu Generated)
 'on':
-  schedule: {}
+  schedule: 
+    - cron:  '0 0 * * *'
   workflow_dispatch: {}
   repository_dispatch:
     types: pipeline_bc89c00e-5c98-4d9d-b7ae-83723a64ec22
